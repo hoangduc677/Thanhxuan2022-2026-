@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyến tàu thanh xuân 2022-2026</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header với tiêu đề -->
+    <header class="hero">
+        <div class="title-container">
+            <h1 class="main-title">Chuyến tàu</h1>
+            <h1 class="main-title sub">thanh xuân</h1>
+            <p class="subtitle">2022 - 2026</p>
+        </div>
+        <div class="music-control">
+            <button id="musicToggle" class="music-btn">
+                <span class="music-icon">🎵</span>
+                <span class="music-text">Bật nhạc</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Photo Gallery -->
+    <main class="gallery">
+        <!-- Ảnh tập thể lớn - span 2x2 -->
+        <div class="photo-item large" style="background-image: url('assets/images/class-photo.jpg');">
+            <div class="overlay">
+                <h3>Lớp 9A1 - Kỷ yếu 2026</h3>
+                <p>"Những ngày tháng đẹp nhất..."</p>
+            </div>
+        </div>
+
+        <!-- Ảnh cá nhân dọc - span 1x2 -->
+        <div class="photo-item tall" style="background-image: url('assets/images/student1.jpg');">
+            <div class="overlay">
+                <h3>Nguyễn Văn A</h3>
+                <p>"Cậu bạn hài hước nhất lớp"</p>
+            </div>
+        </div>
+
+        <!-- Ảnh nhỏ 1x1 -->
+        <div class="photo-item small" style="background-image: url('assets/images/moment1.jpg');">
+            <div class="overlay">
+                <h3>Ngày 20/11</h3>
+                <p>"Thầy cô và những bông hoa"</p>
+            </div>
+        </div>
+
+        <div class="photo-item small" style="background-image: url('assets/images/moment2.jpg');">
+            <div class="overlay">
+                <h3>Giờ ra chơi</h3>
+                <p>"Những khoảnh khắc vui vẻ"</p>
+            </div>
+        </div>
+
+        <!-- Thêm nhiều ảnh nữa... (copy pattern này) -->
+        <div class="photo-item wide" style="background-image: url('assets/images/group1.jpg');">
+            <div class="overlay">
+                <h3>Team đá bóng</h3>
+                <p>"Những chiến binh sân cỏ"</p>
+            </div>
+        </div>
+
+        <div class="photo-item tall" style="background-image: url('assets/images/student2.jpg');">
+            <div class="overlay">
+                <h3>Trần Thị B</h3>
+                <p>"Nữ hoàng học giỏi"</p>
+            </div>
+        </div>
+
+        <!-- ... thêm 20-30 ảnh nữa theo pattern tương tự -->
+    </main>
+
+    <audio id="backgroundMusic" loop>
+        <source src="assets/music/di-di-di-nevada.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
